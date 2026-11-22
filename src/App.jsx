@@ -1,7 +1,9 @@
+import ShopHeader from './components/layout/ShopHeader.jsx'
+
 function App() {
   return (
-    <div>
-      <h1>Bake Box</h1>
+    <div className="page">
+      <ShopHeader />
     </div>
   )
 }
