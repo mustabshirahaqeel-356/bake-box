@@ -135,3 +135,82 @@ body {
     transform: translateY(0);
   }
 }
+
+/* ---------- Sections (shared) ---------- */
+.section {
+  margin-top: 36px;
+  scroll-margin-top: 20px;
+}
+
+.section-title {
+  color: #7b1e22;
+  font-size: 1.9rem;
+  margin: 0 0 14px;
+}
+
+/* ---------- Products (Task 3) ---------- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  border: 2px solid #efe0d6;
+  border-radius: 14px;
+  padding: 44px 22px 22px;
+  transition: transform 0.25s, box-shadow 0.25s;
+  animation: fadeUp 0.6s ease both;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(123, 30, 34, 0.18);
+}
+
+.card h3 {
+  margin: 0 0 6px;
+  font-size: 1.5rem;
+}
+
+.card-desc {
+  margin: 0 0 10px;
+  color: #6b5b5e;
+}
+
+.price {
+  margin: 0;
+  color: #7b1e22;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: #f5b942;
+  color: #5a3b00;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 4px 14px;
+  border-radius: 999px;
+}
+
+.badge-new {
+  background: #2e7d32;
+  color: #fff;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
