@@ -269,3 +269,57 @@ body {
   color: #6b5b5e;
 }
 
+/* ---------- Order (Task 5) ---------- */
+.order-box {
+  background: #fff;
+  border: 2px dashed #7b1e22;
+  border-radius: 14px;
+  padding: 28px;
+  transition: box-shadow 0.25s;
+}
+
+.order-box:hover {
+  box-shadow: 0 10px 22px rgba(123, 30, 34, 0.15);
+}
+
+.order-title {
+  margin: 0 0 14px;
+  color: #7b1e22;
+  font-size: 1.9rem;
+}
+
+.order-line {
+  margin: 6px 0;
+  font-size: 1.2rem;
+}
+
+.order-total {
+  margin: 12px 0 0;
+  color: #7b1e22;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+/* ---------- Footer (Task 5) ---------- */
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 36px;
+  background: #2a2022;
+  color: #fff;
+  padding: 28px 60px;
+  border-radius: 14px;
+  scroll-margin-top: 20px;
+}
+
+.footer-col h3 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+}
+
+.footer-col p {
+  margin: 0;
+  color: #e6dcd8;
+  font-size: 1.1rem;
+}
